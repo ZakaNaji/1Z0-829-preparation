@@ -35,7 +35,10 @@ public class StringMethods {
         //System.out.println("Hello, World!".startsWith("Hello"));//true
         //System.out.println("Hello, World!".endsWith("World!"));//true
 
-
+        //replace
+        //System.out.println("Hello, World!".replace("World", "Java"));//Hello, Java!
+        //System.out.println("Hello, World!".replace("world", "Java"));//Hello, World! (no change)
+        //System.out.println("Hello, World!".replace('o', 'O'));//HellO, WOrld! (all occurrences)
 
     }
 
