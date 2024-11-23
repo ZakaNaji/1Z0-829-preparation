@@ -9,12 +9,19 @@ public class StringMethods {
         //System.out.println(charAt(s, 100));//StringIndexOutOfBoundsException
 
         //index of
-        System.out.println(s.indexOf('o'));
-        System.out.println(s.indexOf('o', 5));
-        System.out.println(s.indexOf("World"));
-        System.out.println(s.indexOf("World", 7));
-        System.out.println(s.indexOf("World", 8));//-1
-        System.out.println(s.indexOf("\u0048"));//0
+        //System.out.println(s.indexOf('o'));
+        //System.out.println(s.indexOf('o', 5));
+        //System.out.println(s.indexOf("World"));
+        //System.out.println(s.indexOf("World", 7));
+        //System.out.println(s.indexOf("World", 8));//-1
+        //System.out.println(s.indexOf("\u0048"));//0
+
+        //substring
+        System.out.println(s.substring(7));
+        System.out.println(s.substring(7, 12));//end index is exclusive
+        //System.out.println(s.substring(7, 13));//StringIndexOutOfBoundsException
+        //System.out.println(s.substring(7, 6));//StringIndexOutOfBoundsException
+
     }
 
     public static int stringLength(String s) {
