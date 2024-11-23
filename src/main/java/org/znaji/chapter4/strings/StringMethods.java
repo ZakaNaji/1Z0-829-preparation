@@ -17,10 +17,14 @@ public class StringMethods {
         //System.out.println(s.indexOf("\u0048"));//0
 
         //substring
-        System.out.println(s.substring(7));
-        System.out.println(s.substring(7, 12));//end index is exclusive
+        //System.out.println(s.substring(7));
+        //System.out.println(s.substring(7, 12));//end index is exclusive
         //System.out.println(s.substring(7, 13));//StringIndexOutOfBoundsException
         //System.out.println(s.substring(7, 6));//StringIndexOutOfBoundsException
+
+        //case conversion
+        //System.out.println(s.toLowerCase());//hello, world!
+        //System.out.println(s.toUpperCase());//HELLO, WORLD!
 
     }
 
