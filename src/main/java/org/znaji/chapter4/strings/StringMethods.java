@@ -26,6 +26,17 @@ public class StringMethods {
         //System.out.println(s.toLowerCase());//hello, world!
         //System.out.println(s.toUpperCase());//HELLO, WORLD!
 
+        //comparison
+        //System.out.println("ABC".equals("abc"));//false
+        //System.out.println("ABC".equalsIgnoreCase("abc"));//true
+
+        //search
+        //System.out.println("Hello, World!".contains("World"));//true
+        //System.out.println("Hello, World!".startsWith("Hello"));//true
+        //System.out.println("Hello, World!".endsWith("World!"));//true
+
+
+
     }
 
     public static int stringLength(String s) {
