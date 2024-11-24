@@ -53,6 +53,10 @@ public class StringMethods {
         //System.out.println("       Hello, World!".indent(-5));//Hello, World!
         //System.out.println("      Hello, World!".stripIndent());//Hello, World!
 
+        //translatesEscape
+        //System.out.println("Hello\\nWorld!"); //Hello\nWorld!
+        //System.out.println("Hello\\nWorld!".translateEscapes());//Hello
+        //World!
     }
 
     public static int stringLength(String s) {
