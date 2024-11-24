@@ -66,7 +66,13 @@ public class StringMethods {
 
         //formating
         //System.out.println("Hello, %s!".formatted("World"));//Hello, World!
-        //System.out.println(String.format("Hello, %s!", "World"));//Hello, World!
+        //System.out.println(String.format("Hello, %s!", "World"));//Hello, World!*
+
+        //chainig
+        var start = "AniMaL ";
+        var result = start.trim().toLowerCase().replace('a', 'A');
+        System.out.println(result);
+        System.out.println(start);//AniMaL  (no change)
     }
 
     public static int stringLength(String s) {
