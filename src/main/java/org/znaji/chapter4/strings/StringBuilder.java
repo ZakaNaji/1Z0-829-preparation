@@ -24,5 +24,12 @@ public class StringBuilder {
         System.out.println(sb);//animals-1 true 2.0-1 true 2.0
         //sb.insert(100, "!");//StringIndexOutOfBoundsException
 
+        //delete
+        sb.delete(7, 13);
+        System.out.println(sb);//animals-1 true 2.0
+        sb.delete(7, 100);//no exception
+        System.out.println(sb);//animals
+        //sb.deleteCharAt(100);//StringIndexOutOfBoundsException
+
     }
 }
