@@ -48,6 +48,10 @@ public class StringMethods {
         //System.out.println(" \u2000 Hello, World! \u2000 ".stripLeading());//Hello, World! (no en quad)
         //System.out.println(" \u2000 Hello, World! \u2000 ".stripTrailing());//   Hello, World! (no en quad)
 
+        //indent
+        //System.out.println("Hello, World!".indent(5));//     Hello, World!
+        //System.out.println("       Hello, World!".indent(-5));//Hello, World!
+        //System.out.println("      Hello, World!".stripIndent());//Hello, World!
 
     }
 
