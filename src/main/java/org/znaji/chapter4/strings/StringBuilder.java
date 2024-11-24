@@ -19,5 +19,10 @@ public class StringBuilder {
         sb.append("-").append(1).append(' ').append(true).append(" ").append(2.0);
         System.out.println(sb);//animals-1 true 2.0
 
+        //insert
+        sb.insert(7, "-").insert(8, 1).insert(9, ' ').insert(10, true).insert(11, " ").insert(12, 2.0);
+        System.out.println(sb);//animals-1 true 2.0-1 true 2.0
+        //sb.insert(100, "!");//StringIndexOutOfBoundsException
+
     }
 }
