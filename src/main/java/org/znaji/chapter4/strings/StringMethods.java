@@ -57,6 +57,12 @@ public class StringMethods {
         //System.out.println("Hello\\nWorld!"); //Hello\nWorld!
         //System.out.println("Hello\\nWorld!".translateEscapes());//Hello
         //World!
+
+        //Blaank vs empty
+        //System.out.println("".isBlank());//true
+        //System.out.println(" ".isBlank());//true
+        //System.out.println("".isEmpty());//true
+        //System.out.println(" ".isEmpty());//false
     }
 
     public static int stringLength(String s) {
