@@ -63,6 +63,10 @@ public class StringMethods {
         //System.out.println(" ".isBlank());//true
         //System.out.println("".isEmpty());//true
         //System.out.println(" ".isEmpty());//false
+
+        //formating
+        //System.out.println("Hello, %s!".formatted("World"));//Hello, World!
+        //System.out.println(String.format("Hello, %s!", "World"));//Hello, World!
     }
 
     public static int stringLength(String s) {
