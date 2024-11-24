@@ -15,5 +15,9 @@ public class StringBuilder {
         System.out.println(sb.indexOf("a", 1));//4
         System.out.println(sb.indexOf("a", 5));//-1
 
+        //append
+        sb.append("-").append(1).append(' ').append(true).append(" ").append(2.0);
+        System.out.println(sb);//animals-1 true 2.0
+
     }
 }
