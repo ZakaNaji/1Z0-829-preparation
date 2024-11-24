@@ -40,6 +40,12 @@ public class StringMethods {
         //System.out.println("Hello, World!".replace("world", "Java"));//Hello, World! (no change)
         //System.out.println("Hello, World!".replace('o', 'O'));//HellO, WOrld! (all occurrences)
 
+        //whitespace
+        //tirm vs strip
+        //System.out.println('\u2000');//en quad
+        //System.out.println(" \u2000 Hello, World! \u2000 ".trim());//  Hello, World!  
+        //System.out.println(" \u2000 Hello, World! \u2000 ".strip());//Hello, World! (no en quad)
+
     }
 
     public static int stringLength(String s) {
