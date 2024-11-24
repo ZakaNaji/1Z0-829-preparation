@@ -45,6 +45,9 @@ public class StringMethods {
         //System.out.println('\u2000');//en quad
         //System.out.println(" \u2000 Hello, World! \u2000 ".trim());//  Hello, World!  
         //System.out.println(" \u2000 Hello, World! \u2000 ".strip());//Hello, World! (no en quad)
+        //System.out.println(" \u2000 Hello, World! \u2000 ".stripLeading());//Hello, World! (no en quad)
+        //System.out.println(" \u2000 Hello, World! \u2000 ".stripTrailing());//   Hello, World! (no en quad)
+
 
     }
 
