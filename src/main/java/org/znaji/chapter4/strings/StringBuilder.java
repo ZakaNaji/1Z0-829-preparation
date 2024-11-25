@@ -31,5 +31,12 @@ public class StringBuilder {
         System.out.println(sb);//animals
         //sb.deleteCharAt(100);//StringIndexOutOfBoundsException
 
+        //replace
+        sb.replace(0, 7, "Hello");
+        System.out.println(sb);//Hello
+        //sb.replace(0, 100, "Hello");//no exception
+        sb.replace(0, 7, "");//
+        System.out.println(sb);//empty string
+
     }
 }
