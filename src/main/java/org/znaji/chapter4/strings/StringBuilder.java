@@ -38,5 +38,10 @@ public class StringBuilder {
         sb.replace(0, 7, "");//
         System.out.println(sb);//empty string
 
+        //reverse
+        sb.insert(0, "ABCDE");
+        System.out.println(sb.reverse());//EDCBA
+
+
     }
 }
