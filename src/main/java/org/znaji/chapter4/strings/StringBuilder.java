@@ -42,6 +42,13 @@ public class StringBuilder {
         sb.insert(0, "ABCDE");
         System.out.println(sb.reverse());//EDCBA
 
+        //StringBuilder doesn't have equals method
+        java.lang.StringBuilder sb1 = new java.lang.StringBuilder("Hello");
+        java.lang.StringBuilder sb2 = new java.lang.StringBuilder("Hello");
+
+        System.out.println(sb1.equals(sb2));//false
+        System.out.println(sb1.toString().equals(sb2.toString()));//true
+
 
     }
 }
