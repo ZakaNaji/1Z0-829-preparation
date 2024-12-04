@@ -1,6 +1,7 @@
 package org.znaji.chapter4.date;
 
 import java.time.*;
+import java.time.temporal.ChronoUnit;
 
 public class DatesApp {
     public static void main(String[] args) {
@@ -65,6 +66,26 @@ public class DatesApp {
         dateTime = dateTime.minusMinutes(30);
         System.out.println("dateTime minus 30 minutes: " + dateTime);
 
+        //working with periods:
+        System.out.println("-----------------working with periods-----------------");
+        var period = Period.ofMonths(1);
+        var datePeriod = date.plus(period);
+        System.out.println("date plus 1 month: " + datePeriod);
+        var dateTimePeriod = dateTime.plus(period);
+        System.out.println("dateTime plus 1 month: " + dateTimePeriod);
+        //var timePeriod = time.plus(period);//error: UnsupportedTemporalTypeException: Unsupported unit: Months
+
+        //working with durations:
+        System.out.println("-----------------working with durations-----------------");
+        var dayDuration = Duration.ofDays(1);
+        var hourDuration = Duration.ofHours(1);
+        var minuteDuration = Duration.of(1, ChronoUnit.MINUTES);
+        var secondDuration = Duration.ofSeconds(1);
+        var nanoDuration = Duration.of(1, ChronoUnit.NANOS);
+        var timeDuration = time.plus(hourDuration);
+        var dateTimeDuration = dateTime.plus(hourDuration);
+        System.out.println("dayDuration: " + dayDuration + ", hourDuration: " + hourDuration + ", minuteDuration: " + minuteDuration + ", secondDuration: " + secondDuration + ", nanoDuration: " + nanoDuration);
+        System.out.println("time plus 1 hour: " + timeDuration + ", dateTime plus 1 hour: " + dateTimeDuration);
 
     }
 }
