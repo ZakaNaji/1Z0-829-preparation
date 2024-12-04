@@ -106,5 +106,25 @@ public class DatesApp {
         System.out.println("myZoneDateTime: " + myZoneDateTime + ", myInstant: " + myInstant);
         dateTime.toInstant(ZoneOffset.UTC);
 
+        //Day time savings
+        System.out.println("-----------------Day time savings-----------------");
+        var usZoneId = ZoneId.of("America/New_York");
+        var march13 = LocalDate.of(2022, Month.MARCH, 13);
+        var _1am = LocalTime.of(1, 0);
+        var march13_1am = ZonedDateTime.of(march13, _1am, usZoneId);
+        System.out.println("march13_1am: " + march13_1am.getHour());
+        System.out.println("march13_1am offset: " + march13_1am.getOffset());
+        var march13_2am = march13_1am.plusHours(1);
+        System.out.println("march13_2am: " + march13_2am.getHour());//jump to 3am because of day time savings
+        System.out.println("march13_2am offset: " + march13_2am.getOffset());
+
+        var november6 = LocalDate.of(2022, Month.NOVEMBER, 6);
+        var november6_1am = ZonedDateTime.of(november6, _1am, usZoneId);
+        System.out.println("november6_1am: " + november6_1am.getHour());
+        System.out.println("november6_1am offset: " + november6_1am.getOffset());
+        var november6_2am = november6_1am.plusHours(1);
+        System.out.println("november6_2am: " + november6_2am.getHour());//jump to 1am because of day time savings
+        System.out.println("november6_2am offset: " + november6_2am.getOffset());
+
     }
 }
