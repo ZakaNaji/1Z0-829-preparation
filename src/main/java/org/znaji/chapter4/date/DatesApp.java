@@ -42,5 +42,29 @@ public class DatesApp {
         //var date4 = new LocalDate();//error: LocalDate() has private access in LocalDate
         //var date5 = new LocalDate(2021, 7, 32);//error: java.time.DateTimeException: Invalid value for DayOfMonth (valid values 1 - 28/31): 32
 
+        //manupulating dates:
+        System.out.println("-----------------manupulating dates-----------------");
+        var date = LocalDate.of(2024, Month.JANUARY, 20);
+        System.out.println("date: " + date);
+        date = date.plusDays(2); //LocalDate is immutable so we need to assign the result to a variable
+        System.out.println("date plus 2 days: " + date);
+        date = date.plusMonths(1);
+        System.out.println("date plus 1 month: " + date);
+        date = date.plusYears(2);
+        System.out.println("date plus 2 years: " + date);
+
+        //manupulating data time:
+        System.out.println("-----------------manupulating data time-----------------");
+        var time = LocalTime.of(15, 45);
+        var dateTime = LocalDateTime.of(date, time);
+        System.out.println("dateTime: " + dateTime);
+        dateTime = dateTime.minusDays(2);
+        System.out.println("dateTime minus 2 days: " + dateTime);
+        dateTime = dateTime.minusHours(3);
+        System.out.println("dateTime minus 3 hours: " + dateTime);
+        dateTime = dateTime.minusMinutes(30);
+        System.out.println("dateTime minus 30 minutes: " + dateTime);
+
+
     }
 }
