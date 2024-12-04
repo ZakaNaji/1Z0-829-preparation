@@ -96,5 +96,15 @@ public class DatesApp {
         one = LocalTime.of(15, 45, 40);
         System.out.println("trancaction time: " + one.truncatedTo(ChronoUnit.MINUTES));
 
+        //Instant
+        System.out.println("-----------------Instant-----------------");
+        var instant = Instant.now();
+        System.out.println("instant: " + instant);//date & time in UTC
+        //get instant from zone date time
+        var myZoneDateTime = ZonedDateTime.of(2021, 7, 7, 15, 45, 30, 123, zoneId);
+        var myInstant = myZoneDateTime.toInstant();
+        System.out.println("myZoneDateTime: " + myZoneDateTime + ", myInstant: " + myInstant);
+        dateTime.toInstant(ZoneOffset.UTC);
+
     }
 }
