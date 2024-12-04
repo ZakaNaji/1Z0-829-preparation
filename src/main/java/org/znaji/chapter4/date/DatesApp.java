@@ -87,5 +87,14 @@ public class DatesApp {
         System.out.println("dayDuration: " + dayDuration + ", hourDuration: " + hourDuration + ", minuteDuration: " + minuteDuration + ", secondDuration: " + secondDuration + ", nanoDuration: " + nanoDuration);
         System.out.println("time plus 1 hour: " + timeDuration + ", dateTime plus 1 hour: " + dateTimeDuration);
 
+        //ChronoUnit
+        System.out.println("-----------------ChronoUnit-----------------");
+        var one = LocalTime.of(15, 45);
+        var two = LocalTime.of(16, 55);
+        System.out.println("hours between one and two: " + ChronoUnit.HOURS.between(one, two));
+        System.out.println("minutes between one and two: " + ChronoUnit.MINUTES.between(one, two));
+        one = LocalTime.of(15, 45, 40);
+        System.out.println("trancaction time: " + one.truncatedTo(ChronoUnit.MINUTES));
+
     }
 }
